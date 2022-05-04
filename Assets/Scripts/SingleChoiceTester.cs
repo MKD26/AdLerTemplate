@@ -78,14 +78,14 @@ public class SingleChoiceTester : MonoBehaviour
                 anzahlRichtig = 0;
                 aktiveFrage = 0;
                 loadQuestion(aktiveFrage);
-                anzahlOffen = frageliste.Length;
+                anzahlOffen = frageliste.Length+1;
             }
             else {
                 loserScreen.SetActive(true);
                 anzahlRichtig = 0;
                 aktiveFrage = 0;
                 loadQuestion(aktiveFrage);
-                anzahlOffen = frageliste.Length;
+                anzahlOffen = frageliste.Length+1;
             }
         }
     }
