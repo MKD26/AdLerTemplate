@@ -16,7 +16,9 @@ public class SingleChoiceTester : MonoBehaviour
     public Button antwort2;
     public Button antwort3;
     public Button antwort4;
-    
+    public GameObject winnerScreen;
+    public GameObject loserScreen;
+
 
     private int richtigeAntwort;
     private Text antwort1_text;
@@ -55,7 +57,7 @@ public class SingleChoiceTester : MonoBehaviour
     }
 
     void loadQuestion(int questionNumber){
-        if(aktiveFrage <= frageliste.Length){
+        if(aktiveFrage < frageliste.Length){
             frage.text = frageliste[questionNumber].frage;
             antwort1_text.text = frageliste[questionNumber].antwort1;
             antwort2_text.text = frageliste[questionNumber].antwort2;
@@ -65,7 +67,14 @@ public class SingleChoiceTester : MonoBehaviour
             RichtigeAntwortZuweisen(richtigeAntwort);
         }
         else {
-            Debug.Log("Das Ding ist durch");
+            Debug.Log("Alle Fragen durchlaufen");
+
+            if(anzahlRichtig >= punkteZumBestehen){
+                winnerScreen.SetActive(true);
+            }
+            else {
+                loserScreen.SetActive(true);
+            }
         }
     }
 
