@@ -18,7 +18,8 @@ public class SingleChoiceTester : MonoBehaviour
     public Button antwort4;
     public GameObject winnerScreen;
     public GameObject loserScreen;
-
+    public OpenLearningElement verknüpfung3DModell;
+    public LernraumLogik verknüpfungLogik;
 
     private int richtigeAntwort;
     private Text antwort1_text;
@@ -49,6 +50,7 @@ public class SingleChoiceTester : MonoBehaviour
         loadQuestion(aktiveFrage);
 
         anzahlOffen = frageliste.Length;
+
     }
     void Update() {
         zählerRichtig.text = "Bisher richtig: " + anzahlRichtig.ToString();
@@ -71,9 +73,19 @@ public class SingleChoiceTester : MonoBehaviour
 
             if(anzahlRichtig >= punkteZumBestehen){
                 winnerScreen.SetActive(true);
+                verknüpfung3DModell.BearbeitungLernelement(true);
+                verknüpfungLogik.PunkteErhoehen(1);
+                anzahlRichtig = 0;
+                aktiveFrage = 0;
+                loadQuestion(aktiveFrage);
+                anzahlOffen = frageliste.Length;
             }
             else {
                 loserScreen.SetActive(true);
+                anzahlRichtig = 0;
+                aktiveFrage = 0;
+                loadQuestion(aktiveFrage);
+                anzahlOffen = frageliste.Length;
             }
         }
     }
