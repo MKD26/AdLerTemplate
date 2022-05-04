@@ -38,7 +38,7 @@ public class LernraumLogik : MonoBehaviour
 
         kopfZeile.AenderePunktestand(startPunkte,maxPunkte);
 
-        switch(Time.fixedTime) 
+        switch(Mathf.Round(Time.fixedTime)) 
         {
             case 3: 
                 eingangstuer_links.zuOeffnen = true;
