@@ -6438,7 +6438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31910682
+      value: 0.31910685
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6446,7 +6446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13152981
+      value: -0.13152982
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344997, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: field of view
@@ -6906,7 +6906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31910682
+      value: 0.31910685
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6914,7 +6914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13152981
+      value: -0.13152982
       objectReference: {fileID: 0}
     - target: {fileID: 8683540605404132235, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9892,8 +9892,8 @@ MonoBehaviour:
   antwort4: {fileID: 482540004}
   winnerScreen: {fileID: 10455701}
   loserScreen: {fileID: 556748690}
-  "verkn\xFCpfung3DModell": {fileID: 1973927261}
   "verkn\xFCpfungLogik": {fileID: 273228602}
+  questionelementVerfaerben: {fileID: 1973927261}
 --- !u!1001 &1671716860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12590,17 +12590,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4783201545962701355, guid: 741f748b4f59dda45a29125619834cb7, type: 3}
   m_PrefabInstance: {fileID: 5665582925580513076}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1973927261 stripped
+--- !u!114 &1973927261
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4783201545962701332, guid: 741f748b4f59dda45a29125619834cb7, type: 3}
-  m_PrefabInstance: {fileID: 5665582925580513076}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973927260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab272528f21ce64397c92365407f689, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a0f5c631ecd7fa4bb4a8ba978097564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  learningElement: {fileID: 1667303931}
+  logikFuerLernraum: {fileID: 273228602}
+  dialogZeile: {fileID: 1264320117}
+  wurdeBearbeitet: 0
 --- !u!114 &1973927266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19994,6 +19999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5665582925161627132, guid: 741f748b4f59dda45a29125619834cb7, type: 3}
+    - {fileID: 4783201545962701332, guid: 741f748b4f59dda45a29125619834cb7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 741f748b4f59dda45a29125619834cb7, type: 3}
 --- !u!33 &5700249661067791720
 MeshFilter:

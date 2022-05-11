@@ -18,9 +18,8 @@ public class SingleChoiceTester : MonoBehaviour
     public Button antwort4;
     public GameObject winnerScreen;
     public GameObject loserScreen;
-    public OpenLearningElement verknüpfung3DModell;
     public LernraumLogik verknüpfungLogik;
-
+    public OpenQuestionElement questionelementVerfaerben;
     private int richtigeAntwort;
     private Text antwort1_text;
     private Text antwort2_text;
@@ -73,12 +72,14 @@ public class SingleChoiceTester : MonoBehaviour
 
             if(anzahlRichtig >= punkteZumBestehen){
                 winnerScreen.SetActive(true);
-                verknüpfung3DModell.BearbeitungLernelement(true);
-                verknüpfungLogik.PunkteErhoehen(1);
+                if(!questionelementVerfaerben.wurdeBearbeitet){
+                    verknüpfungLogik.PunkteErhoehen(1);
+                }
                 anzahlRichtig = 0;
                 aktiveFrage = 0;
                 loadQuestion(aktiveFrage);
                 anzahlOffen = frageliste.Length+1;
+                questionelementVerfaerben.BearbeitungLernelement(true);
             }
             else {
                 loserScreen.SetActive(true);
