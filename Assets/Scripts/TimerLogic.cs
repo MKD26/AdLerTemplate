@@ -24,7 +24,7 @@ public class TimerLogic : MonoBehaviour
     {
         restZeit = gesamtZeit - Mathf.Round(Time.fixedTime);
         timerText.text = restZeit.ToString();
-        timerLeisteStand = timerLeisteStartBreite*(restZeit/100);
+        timerLeisteStand = timerLeisteStartBreite*(restZeit/gesamtZeit);
         timerLeiste.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, timerLeisteStand);
         if (restZeit < 0){
             Debug.Log("Zeit ist abgelaufen");

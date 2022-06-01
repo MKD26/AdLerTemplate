@@ -2304,6 +2304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1520107669}
     m_Modifications:
+    - target: {fileID: 5490732302708381030, guid: 5949fd323a0c50149bd3fde3f72c8caa, type: 3}
+      propertyPath: gesamtZeit
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 5490732302708381032, guid: 5949fd323a0c50149bd3fde3f72c8caa, type: 3}
       propertyPath: m_Name
       value: Timer
@@ -6535,7 +6539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31910682
+      value: 0.31910685
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6543,7 +6547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344994, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13152981
+      value: -0.13152982
       objectReference: {fileID: 0}
     - target: {fileID: 1286277317297344997, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: field of view
@@ -7003,7 +7007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.31910682
+      value: 0.31910685
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7011,7 +7015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8161660642425617101, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13152981
+      value: -0.13152982
       objectReference: {fileID: 0}
     - target: {fileID: 8683540605404132235, guid: fbcd05b6a9b24a245a13fd8e3e695f95, type: 3}
       propertyPath: m_LocalPosition.x
