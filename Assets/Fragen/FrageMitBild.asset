@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee107bb00547394eac066de0de59007, type: 3}
+  m_Name: FrageMitBild
+  m_EditorClassIdentifier: 
+  frage: Was sehen Sie hier?
+  frageImage: {fileID: 2800000, guid: 2f695e2ad82b68c4295de1fbf1546118, type: 3}
+  antwort1: den Mond
+  antwort2: ein H5P Logo
+  antwort3: Hierogylphen
+  antwort4: Bumerang
+  richtigeAntwort: 2

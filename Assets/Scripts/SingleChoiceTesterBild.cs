@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class SingleChoiceTester : MonoBehaviour
+public class SingleChoiceTesterBild : MonoBehaviour
 {
     public int punkteZumBestehen;
-    public SingleChoiceElement[] frageliste;
+    public SingleChoiceElementBild[] frageliste;
     public Text zählerRichtig;
     public Text zumBestehen;
     public Text zählerOffen;
     public Text frage;
+    public RawImage fragenBild;
     public Button antwort1;
     public Button antwort2;
     public Button antwort3;
@@ -20,6 +21,7 @@ public class SingleChoiceTester : MonoBehaviour
     public GameObject loserScreen;
     public LernraumLogik verknüpfungLogik;
     public OpenQuestionElement questionelementVerfaerben;
+   
     private int richtigeAntwort;
     private Text antwort1_text;
     private Text antwort2_text;
@@ -52,14 +54,15 @@ public class SingleChoiceTester : MonoBehaviour
 
     }
     void Update() {
-        zählerRichtig.text = "Bisher richtig: " + anzahlRichtig.ToString();
-        zumBestehen.text = "Zum Bestehen erforderlich: " + punkteZumBestehen.ToString();
-        zählerOffen.text = "Noch offen: " + anzahlOffen.ToString();
+        zählerRichtig.text = "Richtig: " + anzahlRichtig.ToString();
+        zumBestehen.text = "Zum Bestehen: " + punkteZumBestehen.ToString();
+        zählerOffen.text = "Offen: " + anzahlOffen.ToString();
     }
 
     void loadQuestion(int questionNumber){
         if(aktiveFrage < frageliste.Length){
             frage.text = frageliste[questionNumber].frage;
+            fragenBild.texture = frageliste[questionNumber].frageImage;
             antwort1_text.text = frageliste[questionNumber].antwort1;
             antwort2_text.text = frageliste[questionNumber].antwort2;
             antwort3_text.text = frageliste[questionNumber].antwort3;
