@@ -12,6 +12,7 @@ public class LernraumLogik : MonoBehaviour
     public int maxPunkte;
     public string abschlussText = "Herzlichen Glückwunsch! Sie haben den Lernraum erfolgreich abgeschlossen";
     public OutlineEffect effectOfOutline;
+    public OutlineSchalter lernelementeImRaum;
     
     public TuerOeffnen eingangstuer_links;
     public TuerOeffnen eingangstuer_rechts;
@@ -45,6 +46,7 @@ public class LernraumLogik : MonoBehaviour
                 eingangstuer_rechts.zuOeffnen = true;
                 dialogZeile.AndereDialogZeile(begruessungsText);
                 kopfZeile.AendereLernraumname(lernraumName);
+                lernelementeImRaum.OutlineToggle(true);
 
             break;
 
